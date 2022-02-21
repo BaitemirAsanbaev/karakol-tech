@@ -1,5 +1,4 @@
 import Logo from "../Logo/Logo";
-
 const Nav = () => {
   return ( <nav>
     <ul>
