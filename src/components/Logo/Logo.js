@@ -1,5 +1,6 @@
+import logo from '../../assets/K.svg';
 const Logo = () => {
-  return ( <p>Logo</p> );
+  return ( <img src={logo} width='30'/> );
 }
- 
+
 export default Logo;
