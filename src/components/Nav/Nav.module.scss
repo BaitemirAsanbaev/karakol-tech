@@ -1,23 +1,23 @@
 @import "../../styles/variables/colors.scss";
 @import "../../styles/variables/font-family.scss";
+@import "../../styles/mixins/mixins.scss";
 
 .Nav {
   background-color: $base-black;
-  font-family: $base-font-family;
 }
 
 .Nav ul{
   list-style-type: none;
   padding: 7px 0;
   display: flex;
-  max-width: 90%;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+  @include container;
 }
 
 .Nav ul li a{
   color: #fff;
+  font-family: $base-font-family;
 }
 
 @media(max-width:540px) {
