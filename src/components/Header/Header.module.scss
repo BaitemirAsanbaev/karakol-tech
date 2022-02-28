@@ -6,10 +6,11 @@
   display: flex;
   justify-content: space-between;
   height: 100vh;
+  background-color: $base-black;
 }
 
 .HeaderContent {
-  @include container;
+  margin-left: auto;
 }
 
 .Header h1{
@@ -19,6 +20,7 @@
   text-transform: uppercase;
   margin-bottom: 0;
   padding-top: 4rem;
+  color: #fff;
 }
 
 .Header h1 span {
@@ -30,6 +32,7 @@
   font-weight: 400;
   font-size: 38px;
   margin-top: .2rem;
+  color: #fff;
 }
 
 .Header p{
@@ -37,6 +40,7 @@
   font-family: $base-font-family;
   font-weight: 400;
   font-size: 18px;
+  color: #fff;
 }
 
 .Header button{
