@@ -1,8 +1,7 @@
-// .App {
-//   max-width: 90%;
-//   margin: 0 auto;
-// }
+@import './styles/mixins/mixins.scss';
+@import "./styles/variables/colors.scss";
 
 body {
   margin: 0;
+  background-color: $base-black;
 }
