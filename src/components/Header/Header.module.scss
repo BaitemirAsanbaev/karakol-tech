@@ -1,0 +1,54 @@
+@import '../../styles/mixins/mixins.scss';
+@import "../../styles/variables/colors.scss";
+@import "../../styles/variables/font-family.scss";
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.HeaderContent {
+  margin-left: auto;
+}
+
+.Header h1{
+  font-family: $base-font-family;
+  font-weight: 600;
+  font-size: 58px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-top: 4rem;
+  color: #fff;
+}
+
+.Header h1 span {
+  color: $light-red;
+}
+
+.Header h2 {
+  font-family: $base-font-family;
+  font-weight: 400;
+  font-size: 38px;
+  margin-top: .2rem;
+  color: #fff;
+}
+
+.Header p{
+  max-width: 50%;
+  font-family: $base-font-family;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+.Header button{
+  background-color: $light-red;
+  font-family: $base-font-family;
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
