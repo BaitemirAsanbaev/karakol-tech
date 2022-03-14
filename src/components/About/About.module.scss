@@ -2,35 +2,32 @@
 @import "../../styles/variables/font-family.scss" ;
 
 .About {
-  @include container;
   color: #fff;
   font-family: $base-font-family;
   text-align: center;
-}
 
-.AboutText {
-  max-width: 70%;
-  margin: 0 auto;
-  line-height: 1.5rem;
-  font-size: 18px;
-}
+  .AboutText {
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    font-size: 18px;
+  }
+  .CardContainer {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-.CardContainer {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.Card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 28%;
-}
-
-.Card h2,
-.Card p {
-  text-align: start;
+    .Card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 358px;
+      h2,
+      p {
+        text-align: start;
+      }
+    }
+  }
 }

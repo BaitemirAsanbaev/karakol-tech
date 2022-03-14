@@ -4,20 +4,20 @@
 
 .Nav {
   background-color: #212121;
-}
 
-.Nav ul{
-  list-style-type: none;
-  padding: 7px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  @include container;
-}
+  ul{
+    list-style-type: none;
+    padding: 7px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include container;
 
-.Nav ul li a{
-  color: #fff;
-  font-family: $base-font-family;
+    a{
+      color: #fff;
+      font-family: $base-font-family;
+    }
+  }
 }
 
 @media(max-width:540px) {
