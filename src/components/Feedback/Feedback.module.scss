@@ -29,3 +29,16 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .Feedback {
+    .container {
+      p {
+        font-size: 10px;
+      }
+      span {
+        font-size: 8px;
+      }
+    }
+  }
+}

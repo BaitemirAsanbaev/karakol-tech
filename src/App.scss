@@ -16,3 +16,9 @@ body{
 .swiper-button-prev::after {
  color: #fff;
 }
+
+@media (max-width: 500px) {
+  .swiper-button-prev::after, .swiper-button-next::after {
+    transform: scale(.7);
+  }
+}
