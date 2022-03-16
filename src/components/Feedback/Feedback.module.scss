@@ -1,0 +1,31 @@
+@import "../../styles/mixins/mixins.scss";
+@import "../../styles/variables/colors.scss";
+
+
+.Feedback {
+  background-color: $light-red;
+  .container {
+    @include container;
+    padding: 50px 70px;
+    p {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    span {
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .Feedback {
+    .container {
+      p {
+        font-size: 14px;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
