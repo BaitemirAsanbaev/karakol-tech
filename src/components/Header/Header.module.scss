@@ -1,0 +1,83 @@
+@import "../../styles/mixins/mixins.scss";
+@import "../../styles/variables/colors.scss";
+@import "../../styles/variables/font-family.scss";
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+
+  .HeaderContent {
+    @include container;
+
+    h1 {
+      font-family: $base-font-family;
+      font-weight: 600;
+      font-size: 72px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      padding-top: 4rem;
+      color: #fff;
+      span {
+        color: $light-red;
+      }
+    }
+    h2 {
+      font-family: $base-font-family;
+      font-weight: 400;
+      font-size: 64px;
+      margin-top: 0.2rem;
+      color: #fff;
+    }
+    p {
+      max-width: 50%;
+      font-family: $base-font-family;
+      font-weight: 400;
+      font-size: 24px;
+      color: #fff;
+      line-height: 35.76px;
+    }
+    button {
+      background-color: $light-red;
+      font-family: $base-font-family;
+      font-size: 24px;
+      font-weight: 400;
+      border: none;
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+  }
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Header img {
+    display: none;
+  }
+  .HeaderContent {
+    padding: 0 3.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .Header {
+    .HeaderContent {
+      h1 {
+        font-size: 54px;
+      }
+      h2 {
+        font-size: 38px;
+      }
+      p {
+        max-width: 80%;
+      }
+      button {
+        padding: .5rem 1rem;
+      }
+    }
+  }
+}

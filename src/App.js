@@ -1,11 +1,19 @@
+import { useState } from "react";
+import Nav from './components/Nav/Nav';
 import './App.scss';
-import Feedback from './components/Feedback/Feedback';
+import Home from './pages/Home/Home';
+import Drawer from './components/Drawer/Drawer';
 import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
 
 function App() {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
   return (
     <div className="App">
-      <Feedback/>
+      <Nav openDrawer={() => setDrawerOpen(true)} drawer={false}/>
+      <Home/>
+      <Drawer open={drawerOpen} closeDrawer={() => setDrawerOpen(false)}/>
       <Footer/>
     </div>
 );
