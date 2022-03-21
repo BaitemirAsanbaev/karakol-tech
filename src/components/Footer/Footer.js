@@ -2,7 +2,7 @@ import classes from "./Footer.module.scss";
 import fi from "../../assets/footer-test.svg"
 
 const Footer = () => {
-  return (<footer>
+  return (<footer id="footer">
     <div className={classes.container}>
       <div className={classes.links}>
         <div className={classes.courses}>

@@ -20,7 +20,7 @@ const result = feedbacks.map((item)=>{
 })
 
 const Feedback = () => {
-  return (<div className={classes.Feedback}>
+  return (<div id='feedback' className={classes.Feedback}>
     <Swiper
       modules={[Navigation, A11y]}
       spaceBetween={10}
