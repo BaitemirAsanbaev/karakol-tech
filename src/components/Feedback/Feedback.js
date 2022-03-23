@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
-import 'swiper/scss/navigation';
+// import 'swiper/scss/navigation';
 import { Navigation, A11y } from 'swiper';
 import { feedbacks } from './feedbacks';
 import classes from "./Feedback.module.scss";
@@ -10,7 +10,7 @@ import "../../App.scss"
 const result = feedbacks.map((item)=>{
   return(
     <SwiperSlide key={item.author}>
-      
+
     <div className={classes.container}>
       <p>{item.text}</p>
       <span>-{item.author}</span>

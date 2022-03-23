@@ -1,5 +1,5 @@
-@import "../../styles/mixins/mixins.scss" ;
-@import "../../styles/variables/font-family.scss" ;
+@import "../../styles/mixins/mixins.scss";
+@import "../../styles/variables/font-family.scss";
 
 .About {
   color: #fff;
@@ -11,7 +11,7 @@
     max-width: 70%;
     margin: 0 auto;
     line-height: 1.5rem;
-    font-size: 18px;
+    font-size: 20px;
   }
   .CardContainer {
     @include container;
@@ -27,8 +27,53 @@
       align-items: center;
       width: 358px;
       margin: 1rem;
-      h2, p {
+      h2,
+      p {
         text-align: start;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .About {
+    .CardContainer {
+      .Card {
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .About {
+    .AboutText {
+      font-size: 14px;
+    }
+    .CardContainer {
+      .Card {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .About {
+    .AboutText {
+      font-size: 12px;
+    }
+    .CardContainer {
+      .Card {
+        img {
+          width: 40px;
+        }
+        p {
+          font-size: 12px;
+        }
       }
     }
   }
