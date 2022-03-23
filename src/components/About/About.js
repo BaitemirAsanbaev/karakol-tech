@@ -2,7 +2,7 @@ import classes from "./About.module.scss";
 import aboutIcon from "../../assets/about-icon.png";
 
 const About = () => {
-  return (<div className={classes.About}>
+  return (<div id="about" className={classes.About}>
     <h1>О нас</h1>
     <p className={classes.AboutText}>Главная цель этого формата — сделать из тебя профессионального младшего разработчика. Все составляющие готовят тебя к реальным задачам, которые ты встретишь при работе на компанию или фрилансе. </p>
     <div className={classes.CardContainer}>

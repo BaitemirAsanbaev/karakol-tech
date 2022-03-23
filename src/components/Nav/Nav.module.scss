@@ -4,9 +4,10 @@
 
 .Nav {
   background-color: #212121;
-  box-shadow: 0 17px 20px rgba(207, 0, 0, .5);;
-
-  ul{
+  box-shadow: 0 17px 20px rgba(207, 0, 0, 0.5);
+  z-index: 2;
+  position: relative;
+  ul {
     list-style-type: none;
     padding: 7px 0;
     display: flex;
@@ -14,14 +15,14 @@
     align-items: center;
     @include container;
 
-    a{
+    a {
       color: #fff;
       font-family: $base-font-family;
     }
   }
 }
 .dr_Nav {
-  ul{
+  ul {
     list-style-type: none;
     padding: 7px 0;
     display: flex;
@@ -33,14 +34,14 @@
       padding: 1rem 0;
     }
 
-    a{
+    a {
       color: #fff;
       font-family: $base-font-family;
     }
   }
 }
 
-@media(max-width:540px) {
+@media (max-width: 540px) {
   .Nav {
     ul {
       display: none;

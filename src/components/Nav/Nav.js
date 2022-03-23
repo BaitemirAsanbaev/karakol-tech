@@ -1,26 +1,27 @@
+import { Link } from "react-router-dom";
 import DrawerOpen from "../Drawer/DrawerOpen/DrawerOpen";
 import Logo from "../Logo/Logo";
 import classes from "./Nav.module.scss";
 
-const Nav = ({ openDrawer, drawer }) => {
-  return  drawer ?  (
+const Nav = ({ openDrawer, drawer, first_link, second_link, third_link,footer }) => {
+  return drawer ? (
     <div className={classes.dr_Nav}>
       <ul>
-        <li><a><Logo /></a></li>
-        <li><a>Курсы</a></li>
-        <li><a>Отзывы</a></li>
-        <li><a>О нас</a></li>
-        <li><a>Контакты</a></li>
+        <Link to="/"><a><Logo /></a></Link>
+        <li><a href="#courses">{first_link}</a></li>
+        <li><a href="#feedback">{second_link}</a></li>
+        <li><a href="#about">{third_link}</a></li>
+        <li><a href="#footer">{footer}</a></li>
       </ul>
     </div>
-  ):
-  <div className={classes.Nav}>
+  ) :
+    <div className={classes.Nav}>
       <ul>
-        <li><a>Курсы</a></li>
-        <li><a>Отзывы</a></li>
-        <li><a><Logo /></a></li>
-        <li><a>О нас</a></li>
-        <li><a>Контакты</a></li>
+        <li><a href="#courses">{first_link}</a></li>
+        <li><a href="#feedback">{second_link}</a></li>
+        <Link to="/"><a><Logo /></a></Link>
+        <li><a href="#about">{third_link}</a></li>
+        <li><a href="#footer">{footer}</a></li>
       </ul>
       <DrawerOpen click={openDrawer} />
     </div>

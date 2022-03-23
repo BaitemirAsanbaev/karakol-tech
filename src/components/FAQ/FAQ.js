@@ -1,7 +1,7 @@
 import classes from "./FAQ.module.scss";
 
 const FAQ = () => {
-  return (<div className={classes.FAQ}>
+  return (<div id="faq" className={classes.FAQ}>
     <details>
       <summary>Можно ли обучиться профессии за такой срок?</summary>
       <div className={classes.Content}>
