@@ -1,6 +1,26 @@
 @import "./styles/variables/colors.scss";
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body{
   margin: 0;
+  padding: 0;
   background-color: $base-black;
+}
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.swiper-button-next::after {
+  color: #fff;
+}
+.swiper-button-prev::after {
+ color: #fff;
+}
+
+@media (max-width: 500px) {
+  .swiper-button-prev::after, .swiper-button-next::after {
+    transform: scale(.7);
+  }
 }

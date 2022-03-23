@@ -1,4 +1,24 @@
+@mixin horizontal-flex {
+  display: flex;
+  align-items: center;
+}
+@mixin vertical-flex {
+  display: flex;
+  flex-direction: column;
+}
+@mixin standart-padding {
+  padding: 50px 0px;
+}
 @mixin container {
   max-width: 1300px;
   margin: 0 auto;
+}
+@mixin set-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@mixin reset-link {
+  text-decoration: none;
+  color: #fff;
 }
