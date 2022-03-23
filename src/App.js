@@ -4,8 +4,6 @@ import './App.scss';
 import Home from './pages/Home/Home';
 import Drawer from './components/Drawer/Drawer';
 import Footer from './components/Footer/Footer';
-import Home from './pages/Home/Home';
-
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
