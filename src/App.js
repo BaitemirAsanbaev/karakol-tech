@@ -11,10 +11,9 @@ function App() {
 
   return (
     <div className="App">
-      <Nav openDrawer={() => setDrawerOpen(true)} drawer={false}/>
       <Routes>
-        <Route element={<Home/>} path="/" index/>
-        <Route element={<Course/>} path=":courseID"/>
+        <Route element={<Home openDrawer={() => setDrawerOpen(true)} drawer={false}/>} path="/" index/>
+        <Route element={<Course openDrawer={() => setDrawerOpen(true)} drawer={false}/>} path=":courseID"/>
       </Routes>
       <Drawer open={drawerOpen} closeDrawer={() => setDrawerOpen(false)}/>
       <Footer/>

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
+import Nav from "../../components/Nav/Nav";
 
-const Course = () => {
+const Course = ({ openDrawer, drawer }) => {
   const params = useParams()
 
   let output = <></>
@@ -9,17 +10,22 @@ const Course = () => {
       output = (<div>frontend</div>);
       break;
     case "media-literacy":
-       output = (<div>media</div>);
+      output = (<div>media</div>);
       break;
     default:
       break;
   }
-return (
-  <>
-    {output}
-
-  </>
-)
+  return (
+    <>
+      <Nav
+        openDrawer={openDrawer}
+        drawer={drawer}
+        first_link="Преподователь"
+        second_link="Программа обучения"
+        third_link="О курсе" />
+      {output}
+    </>
+  )
 }
 
 export default Course;
