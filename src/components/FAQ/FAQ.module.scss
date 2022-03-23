@@ -4,7 +4,7 @@
 .FAQ {
   details {
     box-sizing: border-box;
-    width: 629px;
+    max-width: 629px;
     text-align: center;
     margin: 0.5rem auto;
     summary {
@@ -27,6 +27,14 @@
       font-family: $base-font-family;
       margin: 0 auto;
       padding: 2rem 0;
+    }
+  }
+}
+
+@media (max-width: 671px) {
+  .FAQ {
+    details {
+      max-width: 80%;
     }
   }
 }
