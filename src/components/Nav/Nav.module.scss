@@ -1,5 +1,4 @@
 @import "../../styles/variables/colors.scss";
-@import "../../styles/variables/font-family.scss";
 @import "../../styles/mixins/mixins.scss";
 
 .Nav {
@@ -17,7 +16,6 @@
 
     a {
       color: #fff;
-      font-family: $base-font-family;
     }
   }
 }
@@ -36,7 +34,6 @@
 
     a {
       color: #fff;
-      font-family: $base-font-family;
     }
   }
 }

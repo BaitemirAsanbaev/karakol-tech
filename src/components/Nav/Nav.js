@@ -7,7 +7,7 @@ const Nav = ({ openDrawer, drawer, first_link, second_link, third_link,footer })
   return drawer ? (
     <div className={classes.dr_Nav}>
       <ul>
-        <Link to="/"><a><Logo /></a></Link>
+        <Link to="/"><Logo /></Link>
         <li><a href="#courses">{first_link}</a></li>
         <li><a href="#feedback">{second_link}</a></li>
         <li><a href="#about">{third_link}</a></li>
