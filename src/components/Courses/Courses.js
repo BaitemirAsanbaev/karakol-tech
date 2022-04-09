@@ -11,8 +11,8 @@ const Courses = () => {
         <h4>Курс frontend разработки</h4>
         <span>lorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturn</span>
         <div className={classes.card_buttons}>
-          <Link to="/frontend">Записаться</Link>
-          <Link to="/frontend">Узнать больше</Link>
+          <Link to="/frontend" onClick={()=> document.body.scrollIntoView()}>Записаться</Link>
+          <Link to="/frontend" onClick={()=> document.body.scrollIntoView()}>Узнать больше</Link>
         </div>
       </div>
     </div>
@@ -23,8 +23,8 @@ const Courses = () => {
         <h4>Курс медиа грамотности</h4>
         <span>lorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturn</span>
         <div className={classes.card_buttons}>
-          <Link to="/media-literacy">Записаться</Link>
-          <Link to="/media-literacy">Узнать больше</Link>
+          <Link to="/media-literacy" onClick={()=> document.body.scrollIntoView()}>Записаться</Link>
+          <Link to="/media-literacy" onClick={()=> document.body.scrollIntoView()}>Узнать больше</Link>
         </div>
       </div>
     </div>
