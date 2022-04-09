@@ -3,7 +3,7 @@ import DrawerOpen from "../Drawer/DrawerOpen/DrawerOpen";
 import Logo from "../Logo/Logo";
 import classes from "./Nav.module.scss";
 
-const Nav = ({ openDrawer, drawer, first_link, second_link, third_link,footer }) => {
+const Nav = ({ openDrawer, drawer, first_link, second_link, third_link,footer}) => {
   return drawer ? (
     <div className={classes.dr_Nav}>
       <ul>
