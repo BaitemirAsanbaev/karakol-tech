@@ -11,7 +11,7 @@ const Mentor = () => {
       <p>В Академии с 2018 года. Зарекомендовала себя как открытый, тепрпеливый и очень доступно объясняющий ментор.</p>
     </div>
     <div className={classes.Photo}>
-      <img src={mentorPhoto} />
+      <img src={mentorPhoto} alt="mentor" />
     </div>
   </div>
   );

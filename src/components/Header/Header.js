@@ -10,7 +10,7 @@ const Header = () => {
       <button>Записаться</button>
     </div>
     <div>
-      <img src={laptop} width='500'/>
+      <img alt="img" src={laptop} width='500'/>
     </div>
   </div>);
 }
