@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
+import Drawer from "../../components/Drawer/Drawer";
 import Nav from "../../components/Nav/Nav";
+import Roadmap from "../../components/Roadmap/Roadmap";
 
-const Course = ({ openDrawer, drawer }) => {
+const Course = ({ openDrawer, drawer, drawerOpen, closeDrawer }) => {
   const params = useParams()
-
   let output = <></>
   switch (params.courseID) {
     case "frontend":
@@ -23,7 +24,10 @@ const Course = ({ openDrawer, drawer }) => {
         first_link="Преподователь"
         second_link="Программа обучения"
         third_link="О курсе" />
+        <Roadmap/>
       {output}
+      <Drawer open={drawerOpen} closeDrawer={closeDrawer} which={true}/>
+
     </>
   )
 }

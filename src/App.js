@@ -8,18 +8,28 @@ import { Route, Routes } from "react-router-dom";
 import Course from "./pages/Course/Course"
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-
   return (
     <div className="App">
       <Routes>
-        <Route element={<Home openDrawer={() => setDrawerOpen(true)} drawer={false}/>} path="/" index/>
-        <Route element={<Course openDrawer={() => setDrawerOpen(true)} drawer={false}/>} path=":courseID"/>
+        <Route element={<Home
+          openDrawer={() => setDrawerOpen(true)}
+          drawer={false}
+          drawerOpen={drawerOpen}
+          closeDrawer = {()=> setDrawerOpen(false)}
+          />}
+            path="/" index/>
+        <Route element={<Course
+        openDrawer={() => setDrawerOpen(true)}
+        drawer={false}
+        drawerOpen={drawerOpen}
+        closeDrawer = {()=> setDrawerOpen(false)}
+
+        />}
+          path=":courseID"/>
       </Routes>
-      <Drawer open={drawerOpen} closeDrawer={() => setDrawerOpen(false)}/>
       <Footer/>
     </div>
 );
 }
-// hello
 
 export default App;
