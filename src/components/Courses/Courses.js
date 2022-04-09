@@ -6,7 +6,7 @@ import media_thumb from "../../assets/media-thumbnail.png"
 const Courses = () => {
   return (<div id="courses" className={classes.Courses}>
     <div className={classes.card}>
-      <img src={front_thumb}/>
+      <img alt="img" src={front_thumb}/>
       <div className={classes.card_info}>
         <h4>Курс frontend разработки</h4>
         <span>lorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturn</span>
@@ -18,7 +18,7 @@ const Courses = () => {
     </div>
 
     <div className={classes.card}>
-      <img src={media_thumb}/>
+      <img alt="img" src={media_thumb}/>
       <div className={classes.card_info}>
         <h4>Курс медиа грамотности</h4>
         <span>lorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturn</span>

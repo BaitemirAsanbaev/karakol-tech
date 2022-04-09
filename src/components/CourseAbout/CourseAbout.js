@@ -6,7 +6,7 @@ const CourseAbout = () => {
     <div className={classes.CourseAbout}>
       <h1>Что такое <span>frontend</span>?</h1>
       <div className={classes.FrontendCard}>
-        <img src={frontendImg} />
+        <img alt="img" src={frontendImg} />
         <div className={classes.Text}>
           <p>Это всё, что ты видишь и кликаешь на сайте или в приложении - картинки, кнопочки, анимации и даже бесячая реклама.</p>
           <p> Самые главные инструменты frontend разработки сайтов это JavaScript, HTML и CSS.</p>
