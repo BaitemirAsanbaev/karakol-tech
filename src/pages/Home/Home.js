@@ -14,7 +14,8 @@ const Home = ({ openDrawer, drawer }) => {
         drawer={drawer}
         first_link="Курсы"
         second_link="Отзывы"
-        third_link="О нас"/>
+        third_link="О нас"
+        footer = "Контакты"/>
       <Header />
       <Courses />
       <Feedback />

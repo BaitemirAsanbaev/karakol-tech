@@ -1,0 +1,85 @@
+@import "../../styles/mixins/mixins.scss";
+@import "../../styles/variables/colors.scss";
+
+.CourseHeader {
+  background-image: url("../../assets/frontend-header.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  .Container {
+    max-width: 650px;
+    padding-left: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    h1 {
+      font-size: 72px;
+      font-weight: 400;
+      color: #fff;
+      span {
+        color: $light-red;
+      }
+    }
+    p {
+      font-size: 36px;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+}
+
+@media(max-width:1000px) {
+  .CourseHeader {
+    .Container {
+      h1 {
+        font-size: 62px;
+      }
+      p {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media(max-width:800px) {
+  .CourseHeader {
+    .Container {
+      max-width: 550px;
+      padding-left: 4rem;
+      h1 {
+        font-size: 64px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width:700px) {
+  .CourseHeader {
+    .Container {
+      max-width: 480px;
+      padding-left: 3.5rem;
+      h1 {
+        font-size: 52px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media(max-width:600px) {
+  .CourseHeader {
+    .Container {
+      max-width: 400px;
+      padding-left: 2.5rem;
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
