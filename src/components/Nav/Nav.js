@@ -7,7 +7,7 @@ const Nav = ({ openDrawer, drawer, first_link, second_link, third_link,footer })
   return drawer ? (
     <div className={classes.dr_Nav}>
       <ul>
-        <Link to="/"><Logo /></Link>
+        <Link to="/" onClick={()=> document.body.scrollIntoView()}><Logo /></Link>
         <li><a href="#courses">{first_link}</a></li>
         <li><a href="#feedback">{second_link}</a></li>
         <li><a href="#about">{third_link}</a></li>
@@ -17,9 +17,9 @@ const Nav = ({ openDrawer, drawer, first_link, second_link, third_link,footer })
   ) :
     <div className={classes.Nav}>
       <ul>
-        <li><a href="#courses">{first_link}</a></li>
+        <li><a href="#mentor">{first_link}</a></li>
         <li><a href="#feedback">{second_link}</a></li>
-        <Link to="/"><a><Logo /></a></Link>
+        <Link to="/" onClick={()=> document.body.scrollIntoView()}><Logo /></Link>
         <li><a href="#about">{third_link}</a></li>
         <li><a href="#footer">{footer}</a></li>
       </ul>

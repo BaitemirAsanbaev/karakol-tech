@@ -3,10 +3,11 @@ import CourseAbout from "../../components/CourseAbout/CourseAbout";
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import Nav from "../../components/Nav/Nav";
 import Mentor from "../../components/Mentor/Mentor";
+import Drawer from "../../components/Drawer/Drawer";
+import Roadmap from "../../components/Roadmap/Roadmap";
 
-const Course = ({ openDrawer, drawer }) => {
+const Course = ({ openDrawer, drawer, drawerOpen, closeDrawer }) => {
   const params = useParams()
-
   let output = <></>
   switch (params.courseID) {
     case "frontend":
@@ -30,7 +31,10 @@ const Course = ({ openDrawer, drawer }) => {
         <CourseHeader />
         <CourseAbout />
         <Mentor />
+        <Roadmap/>
       {output}
+      <Drawer open={drawerOpen} closeDrawer={closeDrawer} which={true}/>
+
     </>
   )
 }

@@ -1,0 +1,51 @@
+@import "../../styles/variables/colors.scss";
+@import "../../styles/mixins/mixins.scss";
+.Roadmap{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .roadmap_container{
+    @include container;
+    @include horizontal-flex;
+    justify-content: space-between;
+    .visual{
+      display: flex;
+      flex-direction: column;
+      align-self: baseline;
+      align-items: center;
+      >div{
+        background-color: $light-red;
+      }
+      .digits{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+      }
+      .line{
+        width: 5px;
+        height: 200px;
+      }
+    }
+    .roadmap_info{
+      max-width: 600px;
+      padding: 0 50px;
+      >div{
+        margin-bottom: 100px;
+        h2{
+          margin: 30px 0;
+        }
+        p{
+          line-height: 1.7;
+          font-size: 20px;
+        }
+      }
+
+
+    }
+  }
+}
