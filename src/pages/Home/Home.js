@@ -16,13 +16,17 @@ const Home = ({ openDrawer, drawer, drawerOpen, closeDrawer }) => {
         first_link="Курсы"
         second_link="Отзывы"
         third_link="О нас"
-        footer = "Контакты"/>
+        footer = "Контакты"
+        href1='#courses'
+        href2='#feedback'
+        href3='#about'
+        href4='#footer'/>
       <Header />
       <Courses />
       <Feedback />
       <About />
       <FAQ />
-      
+
       <Drawer open={drawerOpen} closeDrawer={closeDrawer} which={false}/>
     </div>
   );

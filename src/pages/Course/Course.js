@@ -27,7 +27,11 @@ const Course = ({ openDrawer, drawer, drawerOpen, closeDrawer }) => {
         first_link="Преподователь"
         second_link="Программа обучения"
         third_link="О курсе"
-        footer="Контакты" />
+        footer="Контакты"
+        href1='#mentor'
+        href2='#programm'
+        href3='#aboutCourse'
+        href4='#footer'/>
         <CourseHeader />
         <CourseAbout />
         <Mentor />

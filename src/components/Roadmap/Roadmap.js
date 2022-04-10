@@ -1,6 +1,6 @@
 import classes from "./Roadmap.module.scss"
 const Roadmap = () => {
-  return (<div className={classes.Roadmap}>
+  return (<div className={classes.Roadmap} id='programm'>
     <h1>Программа обучения</h1>
     <div className={classes.roadmap_container}>
       <div className={classes.visual}>
@@ -40,7 +40,7 @@ const Roadmap = () => {
           <p>Язык, который отвечает за содержимое сайта - тексты, картинки, ссылки и тд. Ты научишься правильно писать семантику страницы и отработаешь весь функционал на практике.
           </p>
         </div>
-        
+
       </div>
     </div>
   </div>);

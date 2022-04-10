@@ -3,7 +3,7 @@ import frontendImg from "../../assets/frontendImg.png";
 
 const CourseAbout = () => {
   return (
-    <div className={classes.CourseAbout}>
+    <div className={classes.CourseAbout} id='aboutCourse'>
       <h1>Что такое <span>frontend</span>?</h1>
       <div className={classes.FrontendCard}>
         <img alt="img" src={frontendImg} />
