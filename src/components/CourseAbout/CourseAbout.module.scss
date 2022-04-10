@@ -1,0 +1,108 @@
+@import "../../styles/variables/colors.scss";
+@import "../../styles/mixins/mixins.scss";
+
+.CourseAbout {
+  max-width: 80%;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    font-size: 54px;
+
+    span {
+      color: $light-red;
+    }
+  }
+
+  .FrontendCard {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+
+    .Text {
+      background: linear-gradient(90deg,
+          rgba(207, 0, 0, 0.52),
+          rgba(207, 0, 0, 1));
+      padding: 5rem;
+
+      p {
+        margin-top: 0;
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width:1000px) {
+  .CourseAbout {
+    h1 {
+      font-size: 62px;
+    }
+
+    .FrontendCard {
+      .Text {
+        padding:4.5rem ;
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:800px) {
+  .CourseAbout {
+    h1 {
+      font-size: 64px;
+    }
+
+    .FrontendCard {
+      .Text {
+        padding:4rem ;
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:700px) {
+  .CourseAbout {
+    h1 {
+      font-size: 52px;
+    }
+
+    .FrontendCard {
+      .Text {
+        padding:3.5rem ;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width:600px) {
+  .CourseAbout {
+    h1 {
+      font-size: 32px;
+    }
+    .FrontendCard {
+      .Text {
+        padding:1.5rem ;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
