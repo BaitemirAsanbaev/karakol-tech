@@ -40,6 +40,16 @@
           color: #fff;
           background-color: $base-black
         }
+        :first-child:hover {
+          background-color: $light-red;
+          color: #fff;
+          transition: .3s;
+        }
+        :last-child:hover {
+          background-color: #fff;
+          color: $base-black;
+          transition: .3s;
+        }
       }
     }
   }

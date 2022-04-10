@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Karakol <span>Tech</span></h1>
       <h2>IT Academy</h2>
       <p>Lorem ipsum dolar sit amet consestutetis Lorem ipsum dolar sit amet consestutetis </p>
-      <button>Записаться</button>
+      <button><a href='https://forms.gle/QqfdEt4P6W9irVAVA'>Записаться</a></button>
     </div>
     <div>
       <img alt="img" src={laptop} width='500'/>

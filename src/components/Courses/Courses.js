@@ -11,7 +11,7 @@ const Courses = () => {
         <h4>Курс frontend разработки</h4>
         <span>lorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturnlorem ipsum dolar amet consesturn</span>
         <div className={classes.card_buttons}>
-          <Link to="/frontend" onClick={()=> document.body.scrollIntoView()}>Записаться</Link>
+          <a href="https://forms.gle/QqfdEt4P6W9irVAVA" onClick={()=> document.body.scrollIntoView()}>Записаться</a>
           <Link to="/frontend" onClick={()=> document.body.scrollIntoView()}>Узнать больше</Link>
         </div>
       </div>

@@ -41,6 +41,17 @@
       color: #fff;
       padding: 1rem 2rem;
       border-radius: 10px;
+      a {
+        color: #fff;
+      }
+    }
+    button:hover {
+      a {
+        color: $light-red;
+      }
+      background-color: #fff;
+      cursor: pointer;
+      transition: .3s;
     }
   }
   img {
