@@ -1,13 +1,13 @@
 @import "../../styles/variables/colors.scss";
 
 .FAQ {
-  margin-bottom: 3rem;
+  margin: 6rem 0;
 
   details {
     box-sizing: border-box;
     max-width: 629px;
     text-align: center;
-    margin: 0.5rem auto;
+    margin: 2rem auto;
     .Content {
       transform: translateY(-40px);
       z-index: 1;
@@ -21,7 +21,7 @@
     summary {
       list-style-type: none;
       background-color: $middle-red;
-      padding: 0.7rem 0;
+      padding: 1rem;
       border-radius: 2rem;
       color: #ffffff;
       border: 2px solid transparent;
