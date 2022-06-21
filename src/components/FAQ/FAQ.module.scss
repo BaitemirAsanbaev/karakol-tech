@@ -1,4 +1,5 @@
 @import "../../styles/variables/colors.scss";
+
 .FAQ {
   margin-bottom: 3rem;
 
@@ -7,6 +8,16 @@
     max-width: 629px;
     text-align: center;
     margin: 0.5rem auto;
+    .Content {
+      transform: translateY(-40px);
+      z-index: 1;
+      position: relative;
+      p {
+        padding: 50px 20px 20px 20px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+    }
     summary {
       list-style-type: none;
       background-color: $middle-red;
@@ -14,10 +25,15 @@
       border-radius: 2rem;
       color: #ffffff;
       border: 2px solid transparent;
+      position: relative;
+      z-index: 2;
       cursor: pointer;
       &:focus {
         border-color: rgb(77, 6, 6);
       }
+    }
+    details[open] .Content {
+      animation: sweep, 0.5s ease-out;
     }
     p {
       max-width: 580px;
