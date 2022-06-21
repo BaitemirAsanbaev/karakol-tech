@@ -1,44 +1,68 @@
 @import "../../styles/mixins/mixins.scss";
 @import "../../styles/variables/colors.scss";
-.Courses{
+.Courses {
   @include container;
   @include horizontal-flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 100px auto;
   color: #fff;
-  .card{
+  .card {
     @include vertical-flex;
     align-items: center;
     max-width: 400px;
     margin: 20px 50px;
-    .card_info{
+    .card_info {
       background-color: $light-red;
       padding: 20px 40px;
-      h4{
+      h4 {
         margin: 0;
         font-size: 30px;
         font-weight: normal;
       }
-      span{
+      span {
         display: inline-block;
         margin: 20px 0;
       }
-      .card_buttons{
+      .card_buttons {
         @include horizontal-flex;
         justify-content: space-between;
-        a{
+        a {
           padding: 10px 15px;
           border-radius: 9px;
           font-size: 18px;
         }
-        :first-child{
+        :first-child {
           color: $light-red;
           background-color: #fff;
         }
-        :last-child{
+        :last-child {
           color: #fff;
-          background-color: $base-black
+          background-color: $base-black;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .Courses {
+    .card img {
+      max-width: 250px;
+    }
+    .card_info {
+      max-width: 250px;
+      h4 {
+        font-size: 24px!important;
+      }
+      span {
+        font-size: 14px!important;
+      }
+      .card_buttons{
+        @include vertical-flex;
+        a{
+          font-size: 16px!important;
+          margin: 10px 0;
         }
       }
     }
