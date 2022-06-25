@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
-// import 'swiper/scss/navigation';
 import { Navigation, A11y } from 'swiper';
 import { feedbacks } from './feedbacks';
 import classes from "./Feedback.module.scss";
