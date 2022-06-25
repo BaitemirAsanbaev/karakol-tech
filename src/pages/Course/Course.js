@@ -6,6 +6,7 @@ import Mentor from "../../components/Mentor/Mentor";
 import Roadmap from "../../components/Roadmap/Roadmap";
 import CourseNav from "../../components/CourseNav/CourseNav";
 import Curtain from "../../components/Curtain/Curtain";
+import CourseInfo from "../../components/CourseInfo/CourseInfo";
 
 const Course = () => {
   const params = useParams()
@@ -22,6 +23,7 @@ const Course = () => {
         <CourseAbout />
         <Mentor />
         <Roadmap />
+        <CourseInfo/>
         <Curtain />
       </>);
       break;

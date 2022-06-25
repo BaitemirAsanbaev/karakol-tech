@@ -1,0 +1,10 @@
+@import "../../styles/variables/colors.scss";
+button.Register {
+  background-color: $light-red;
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}

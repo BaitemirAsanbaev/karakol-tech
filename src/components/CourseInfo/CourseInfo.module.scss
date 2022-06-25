@@ -1,0 +1,16 @@
+@import "../../styles/mixins/mixins.scss";
+.CourseInfo {
+  @include vertical-flex;
+  color: #fff;
+  margin: 100px auto;
+  align-items: center;
+  ul {
+    list-style-type: none;
+    max-width: 900px;
+    margin: 20px 0;
+    li {
+      margin: 40px 0;
+      font-size: 24px;
+    }
+  }
+}
