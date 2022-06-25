@@ -3,7 +3,7 @@ import mentorPhoto from "../../assets/mentor.png";
 
 const Mentor = () => {
   return (
-  <div className={classes.Mentor}>
+  <div id="mentor" className={classes.Mentor}>
     <div className={classes.Text}>
       <h2>Эламан Имашев</h2>
       <span>Преподаватель</span>

@@ -16,32 +16,24 @@
 
     a {
       color: #fff;
+      img.link {
+        display: none;
+      }
     }
   }
 }
-.dr_Nav {
-  ul {
-    list-style-type: none;
-    padding: 7px 0;
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    @include container;
-
-    li {
-      padding: 1rem 0;
-    }
-
-    a {
-      color: #fff;
-    }
-  }
-}
-
 @media (max-width: 540px) {
   .Nav {
+    padding: 10px;
     ul {
-      display: none;
+      a {
+        span{
+          display: none;
+        }
+        img.link {
+          display: inline;
+        }
+      }
     }
   }
 }

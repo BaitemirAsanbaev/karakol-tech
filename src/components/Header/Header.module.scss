@@ -112,3 +112,14 @@
     }
   }
 }
+
+@media(max-width:300px) {
+  .Header {
+    .HeaderContent {
+      p {
+        font-size: 9px!important;
+        margin: 0 10px;
+      }
+    }
+  }
+}

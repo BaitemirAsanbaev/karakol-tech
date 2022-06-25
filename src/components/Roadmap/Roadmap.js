@@ -1,6 +1,6 @@
 import classes from "./Roadmap.module.scss"
 const Roadmap = () => {
-  return (<div className={classes.Roadmap}>
+  return (<div id="roadmap" className={classes.Roadmap}>
     <h1>Программа обучения</h1>
     <div className={classes.roadmap_container}>
       <div className={classes.visual}>
