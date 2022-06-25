@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import CourseAbout from "../../components/CourseAbout/CourseAbout";
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
-import Nav from "../../components/Nav/Nav";
 import Mentor from "../../components/Mentor/Mentor";
 import Roadmap from "../../components/Roadmap/Roadmap";
 import CourseNav from "../../components/CourseNav/CourseNav";
